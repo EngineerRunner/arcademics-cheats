@@ -243,7 +243,5 @@ function findQA() {
 
 //listen for user input
 document.querySelector("#gameContainer > iframe").contentDocument.body.addEventListener("keypress", function onEvent(event) {
-    if (event.key === "a") {
-        findQA();
-    }
+    setTimeout(findQA(),50);
 });
